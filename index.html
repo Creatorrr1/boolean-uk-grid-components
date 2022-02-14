@@ -34,50 +34,63 @@
       .three-column-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 4px;
         
       }
 
       .three-column-grid__expand-two {
         display: grid;
         grid-template-columns: 50px 1fr 50px;
+        gap: 4px;
       }
 
       .five-column-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 4px;
       }
 
       .center-grid {
+        /* padding-left: 500px;
+        padding-right: 500px; */
+        display: grid;
+        place-items: center;
       }
 
       .centered {
+       width: 200px;
       }
 
       /* Grid within Grid Section */
       /* Practice re-using classes */
 
     .two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
+        
     }
   
 
-
         .two-column-grid__expand-two {      
           display: grid;       
-          grid-template-columns: 70px 1fr;
+          grid-template-columns: 90px 1fr;
+          gap: 4px;
       }
 
-  
 
        
       .logo{
         border: 1px solid green;
         padding:4px;
+        
+      }
+      .grid-in-grid2 {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        
       }
 
-  
-      
-    
 
 
     </style>
@@ -125,12 +138,12 @@
     <div>
       <h2>Grid within Grid #1</h2>
       <div class="container two-column-grid">
-        <div class="box">
+        <div class="box three-column-grid">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
         </div>
-        <div class="box">
+        <div class="box five-column-grid">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
@@ -141,14 +154,14 @@
     </div>
     <div>
       <h2>Grid within Grid #2 (Expansion)</h2>
-      <div class="container">
+      <div class="container grid-in-grid2">
         <div class="box">
           <div class="inner-box"></div>
         </div>
         <div class="box expand">
           <div class="inner-box width-sm"></div>
         </div>
-        <div class="box">
+        <div class="box three-column-grid">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
