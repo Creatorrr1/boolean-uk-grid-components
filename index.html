@@ -32,12 +32,19 @@
       /* Write CSS Here */
 
       .three-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
       }
 
       .three-column-grid__expand-two {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
       }
 
       .five-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       }
 
       .center-grid {
@@ -49,8 +56,30 @@
       /* Grid within Grid Section */
       /* Practice re-using classes */
 
-      .two-column-grid {
+    .two-column-grid {
+
+    }
+  
+
+
+        .two-column-grid__expand-two {      
+          display: grid;       
+          grid-template-columns: 70px 1fr;
       }
+
+  
+
+       
+      .logo{
+        border: 1px solid green;
+        padding:4px;
+      }
+
+  
+      
+    
+
+
     </style>
   </head>
   <body>
